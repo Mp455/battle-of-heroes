@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       primary: "#f26246",
+      secondary: "#F5B532",
     },
   },
   plugins: [],

@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Battle of heroes",
-  description: "Batalha de hérois por habilidades",
+  description: "Batalha de heróis por habilidades",
 };
 
 export default function RootLayout({
@@ -18,9 +18,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const bodyStyle = {
+    backgroundColor: "black",
+  };
+
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={poppins.className} style={bodyStyle}>
         <Header />
         {children}
       </body>
